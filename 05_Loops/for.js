@@ -19,6 +19,7 @@ for (let obj in studMarks) {
 console.log(studMarks.length); //undefined
 console.log(Object.keys(studMarks).length) //5
 
+// It takes an object as input and returns an array of all the property names (keys) in that object.
 for (let i = 0; i < Object.keys(studMarks).length; i++) {
     console.log('Marks for ' + Object.keys(studMarks)[i] + ' is ' + studMarks[Object.keys(studMarks)[i]])
 }
