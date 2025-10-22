@@ -12,7 +12,7 @@ console.log(a, b, c, d, e, f, g)
 
 console.log(typeof d) //typeof(d) - will tell dataType of d
 
-//Non Primitive DataType - Object
+//Non Primitive DataType - Object,array, functions, etc
 const obj = {
     Name: "Arunesh", //"Name":"Arunesh" Key value pair can also be defined as this
     SurName: "Singh",
