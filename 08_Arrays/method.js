@@ -16,6 +16,3 @@ console.log(num.join('-')) //join all the array elements with a seperator
 
 let unShiftReturn = num.unshift(10); //Insert the element in an array at the first positon and it return the length of the array and modifies the original array
 console.log(num, unShiftReturn)
-
-let delNum = delete num[0];
-console.log(delNum)
