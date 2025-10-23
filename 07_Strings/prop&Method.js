@@ -4,7 +4,7 @@ console.log(fullName.length) //It is a property so '()' is not required
 
 console.log(fullName.toUpperCase())
 console.log(fullName.toLowerCase())
-
+console.log(fullName.split(' ')) //It will split the string with ' ' and return the array as [ 'Disha', 'Sahu' ]
 console.log(fullName.slice(1, 11)) //5 is not included in this
 console.log(fullName.slice(6)) //It will print till end of the fullName
 
