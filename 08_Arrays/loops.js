@@ -80,6 +80,7 @@ console.log(arr)
 //foreach loops can takes element or index or arr. Position 1 : element, 2: index, 3: Array
 let arrNumFor = [2, 4, 1]
 arrNumFor[5] = 10;
+console.log(arrNumFor.length)
 arrNumFor.forEach((element, index) => {
     console.log('ForEach :', element, index)
 });

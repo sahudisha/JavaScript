@@ -25,3 +25,13 @@ console.log('Filter Array2 :', arrFilter2)
 let arr3 = [45, 19, 21, 18]
 let arrRed = arr3.reduce((a, b) => { return a + b })
 console.log(arrRed)
+
+//Create a array with square of element from a given array 
+let arr4 = [34, 5, 670]
+let arrSqu = arr4.map((e) => { return e * e }) //map is used as we have to return an array
+console.log(arrSqu)
+
+//Calculate factorial of a given no from an array of first n natural numbers
+let no = [1, 2, 3, 4, 5, 6];
+let fact = no.reduce((a, b) => { return a * b })
+console.log(fact)
