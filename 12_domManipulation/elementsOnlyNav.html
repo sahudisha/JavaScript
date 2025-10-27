@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Web</title>
+</head>
+
+<body>
+    <!-- This is Dummy Porfolio -->
+    <div>
+        <ul>
+            <li>This is Me</li>
+            <li>My Portfolio</li>
+            <li>About Me</li>
+        </ul>
+    </div>
+    <div>
+        This is Arunesh Singh
+    </div>
+    <script>
+        let a = document.body;
+        //This will return text as after body their is empty text node
+        console.log('First Child of Body :', a.firstChild)
+
+        //Even body has comment node firstElementChild will return only elements
+        console.log('First Element Child of Body :', a.firstElementChild)
+        console.log(a.children) //This means all ElementChildNodes here it is nav,div and script
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <p>This is a paragraph</p>
+        <span>This is a span</span>
+    </div>
+    <script>
+        //#text There is a hidden space of text between body and div It will write <body><div> without space then div will come as first child.
+        console.log(document.body.firstChild);
+
+        //<script> is here the last tag of body tag
+        console.log(document.body.lastChild);
+
+        //will list all child tags of body as node list not array : NodeList(4) [text, div, text, script] and Hence array operation can not be perform directly on child nodes.
+        console.log(document.body.childNodes);
+        //not any condition or formula
+        // document.body.childNodes[0]===document.body.firstChild //this means both have same meaning  
+        // document.body.childNodes[document.body.childNodes.length - 1] === document.body.lastChild //as index starts from 0 so childNodes.length -1 is lastChild 
+
+        //To change above lines of childNode in array we can use Array.from
+        let arrNodes = Array.from(document.body.childNodes);
+        console.log(arrNodes) //(4) [text, div, text, script]
+    </script>
+</body>
+
+</html>
