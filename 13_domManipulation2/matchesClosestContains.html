@@ -1,0 +1,34 @@
+<!-- 
+ Matches  : To Check if the element matches the given CSS Selector : Return true or false
+ Closest  : To Look for the nearest ancestor that matches the given CSS Selector. The Element itself is also checked
+ Contains : Return true if elemB is inside elemA. elemA.Contains(elemB) works on node/element
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Extra DOM Manipulation</title>
+</head>
+
+<body>
+    <div class="box" id="id1">This is first div <span id="sp1">This is Span</span></div>
+    <div class="box" id="id2">This is second div</div>
+    <script>
+        let id1 = document.getElementById('id1');
+        let sp1 = document.getElementById('sp1');
+        console.log(id1)
+        console.log(id1.matches('.class')) //return false as no class='class'
+        console.log(id1.matches('.box')) //return true as class='box' is present
+        console.log(sp1.closest('#id1')) //returns first div that is closest one matched
+        console.log(sp1.closest('#sp1')) //Returns span that is closest 
+        console.log(id1.contains(sp1)) //returns true
+        console.log(sp1.contains(sp1)) //returns true
+        console.log(sp1.contains(id1)) //returns false
+        console.log(id1.contains('.box')) //cpntains doesn't work on id/class selector
+    </script>
+</body>
+
+</html>
