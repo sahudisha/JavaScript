@@ -9,7 +9,7 @@ ctitleClass[0].style.color = 'red';
 ctitleClass[1].style.color = 'blue';
 ctitleClass[2].style.color = 'green';
 
-//style.color works on element not on HTML collection
+//style.color works on element not on HTML collection/NodeList works on element directly
 
 //Returns all elements inside an element matching the CSS selector('.' for class # for Id)
 let queryAll = document.body.querySelectorAll('.card-title');

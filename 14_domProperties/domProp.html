@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    Hi Arunesh!
+    <div id="div1" class="container">
+        This is Div 1
+    </div>
+    <div id="div2" class="container">
+        This is Div 2
+        <b>Hello from Div 2</b>
+    </div>
+    <div id="div3" class="container">
+        This is Div 3
+    </div>
+    <script>
+        //log shows the element DOM tree while dir print the element as Js Object with its properties.
+        console.log(document.getElementsByTagName('div')[0])
+        console.dir(document.getElementsByTagName('div')[0])
+
+        //tagName-- valid only on elements and nodeName-- valid on node(text,comments,etc)
+        console.log(document.body.firstChild.tagName) //text is not a tag
+        console.log(document.body.firstElementChild.tagName) //will print DIV
+        console.log(document.body.firstChild.nodeName) //will print #text
+
+        //Inner HTML is valid for elements only for others (eg for text node) we can use nodeValue or data 
+        console.log(div1.innerHTML) //Returns div1 content
+        div2.innerHTML = 'Hello Arunesh Singh from inner HTML' //will modify div2 inner value
+        console.log(div1.outerHTML) //Returns div1 outer HTML means div tag with inner content
+
+        console.log(document.body.firstChild.nodeValue) //will print  'Hi Arunesh!''
+        console.log(document.body.firstChild.data) //will print  'Hi Arunesh!'
+
+        console.log(div2.textContent) //will give text content ignoring all Tag and elements
+        div3.hidden = true;
+    </script>
+</body>
+
+</html>
