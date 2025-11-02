@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Element Insertion</title>
+</head>
+
+<body>
+    I am outside at start of the Div element
+    <div class="container">
+        I am start of the Div container Element
+        <div id="first">
+            I am the Most Inner Div Tag
+        </div>
+        I am End of the div container element
+    </div>
+    I am outside at end of the div element
+    <script>
+        let divTag = document.getElementsByTagName('div')[0];
+        //Most basic way but has to pass everything as string 
+        // divTag.innerHTML = divTag.innerHTML + '<h2>Hello World!</h2>'
+
+        let div = document.createElement('div')
+        div.innerHTML = '<h2>Hello World</h2>'
+        //You can insert an element once only as other will override it
+        // divTag.append(div)
+        // divTag.prepend(div)
+        // divTag.before(div)
+        // divTag.after(div)
+        // divTag.replaceWith(div)
+
+        // NOTE : If you want to check for details HTML Template generated you can check elements from brownser developer Tools
+    </script>
+</body>
+
+</html>

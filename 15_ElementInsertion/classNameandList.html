@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClassName and ClassList</title>
+</head>
+
+<body>
+    <div id="first">
+        This is a div element
+    </div>
+    <script>
+        // NOTE : If you want to check for details HTML Template generated you can check elements from brownser developer Tools
+
+        first.className = 'container-fluid' //This will change the class for element with id = first
+        console.log(first.classList); //will list on classes used on the tag
+        first.classList.add('row'); //It will add the class row for element with first tag along with existing tag
+        first.classList.add('my-2');
+        first.classList.remove('container-fluid');
+        first.classList.toggle('container'); //It will toggle the class
+        first.classList.remove('row');
+        console.log(first.classList.contains('row'));
+    </script>
+</body>
+
+</html>

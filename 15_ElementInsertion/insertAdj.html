@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="first">
+        This is first div tag
+    </div>
+    <div id="second">
+        This is second div tag
+    </div>
+    <script>
+        let first = document.getElementById('first');
+        first.insertAdjacentHTML('beforebegin', '<p>Hello Arunesh from beforebegin</p>')
+        first.insertAdjacentHTML('afterbegin', '<p>Hello Arunesh from afterbegin</p>')
+        first.insertAdjacentHTML('beforeend', '<p>Hello Arunesh from beforeend</p>')
+        first.insertAdjacentHTML('afterend', '<p>Hello Arunesh from afterend</p>')
+        
+        //directly called this using id but that is not a recommended way 
+        second.remove()
+         // NOTE : If you want to check for details HTML Template generated you can check elements from brownser developer Tools
+    </script>
+</body>
+
+</html>
