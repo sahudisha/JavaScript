@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set Timeout</title>
+</head>
+
+<body>
+
+    <script>
+        setTimeout(function () {
+            document.writeln('<div>Hello World from Normal Func</div>');
+        }, 1000)
+
+        //setTimeout with arrow function
+        setTimeout(() => {
+            document.writeln('<div>Hello World from Arrow func</div>')
+        }, 2500);
+
+        let timerId = setTimeout(() => {
+            document.writeln('<div>Hello World from Arrow func</div>')
+        }, 4000);
+        // timerId(); //It will call the timeoutFunction
+        console.log(timerId); //It will print number which represent the timerId/constant for setTimeout
+        // clearTimeout(timerId); //if it is called before timerId then it will cancel the setTimeout call
+        console.log(timerId);
+
+        // setTimeout(function()/externalfunction, timeInterval, args1,arg2,..)
+        let sum=(a,b)=>{
+            document.writeln('Print ',a+b);
+        }
+
+        setTimeout(sum,5000,19,21)
+    </script>
+</body>
+
+</html>
