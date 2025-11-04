@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="divTag" class="container" onmouseenter="console.log('Mouse Entered in Container')">
+        <button id="btnDiv" onclick="console.log('hello')">Log Hello in Console</button>
+    </div>
+    <script>
+        // Adding a handler in Js override existing handler Ex : btnDiv will print Hello World 
+        // NOTE : It happens because of the script added in last which ever comes last will run like if we add script above button the inline will execute.
+        let btnDiv = document.getElementById('btnDiv');
+        btnDiv.onclick = () => {
+            console.log('Hello World!');
+        }
+    </script>
+</body>
+
+</html>
